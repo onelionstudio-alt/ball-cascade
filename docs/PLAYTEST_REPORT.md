@@ -19,7 +19,7 @@ Real Chromium in the Codex in-app browser. Played through visible controls: nati
 | 11. Chaos Factory | won | 1 | 81.8 | 100% | 510 |
 | 12. Cascade Master | won | 1 | 94.4 | 100% | 545 |
 
-[Raw local report](browser-campaign.json) contains the earned completion flags, best results, layouts, aims and final physical result. [Completion screenshot](screenshots/campaign-complete.png) shows Cascade Master and Challenge Replay unlocked. This is an agent playthrough with known routes, not independent novice validation.
+[Raw local report](browser-campaign.json) contains the earned completion flags, best results, layouts, aims and final physical result. [Completion screenshot](screenshots/campaign-complete.jpg) shows Cascade Master and Challenge Replay unlocked. This is an agent playthrough with known routes, not independent novice validation.
 
 ## Other executed checks
 
