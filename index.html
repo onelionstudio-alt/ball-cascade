@@ -1,0 +1,122 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ball Cascade — Atelier 452</title><meta name="description" content="Build a better cascade. A kinetic incremental arcade."><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='18' fill='%23dbff70'/%3E%3C/svg%3E"><style>
+*{box-sizing:border-box}body{margin:0;background:#101b22;color:#eaf2ed;font:15px system-ui,sans-serif}button{font:inherit;cursor:pointer;color:inherit}button:disabled{cursor:default;opacity:.4}header{max-width:1360px;margin:auto;padding:24px 30px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #304047}.brand{font-weight:850;font-size:23px;letter-spacing:-1px}.brand b{color:#dbff70}.eyebrow{font-size:10px;letter-spacing:2px;color:#90a5a6;text-transform:uppercase}.headbuttons{display:flex;gap:8px}button.small{border:1px solid #42545a;background:transparent;padding:10px 14px;border-radius:9px}.layout{max-width:1360px;margin:24px auto;display:grid;grid-template-columns:220px minmax(300px,1fr) 270px;gap:22px;padding:0 30px}.panel{background:#19282f;border:1px solid #30434a;border-radius:16px;padding:19px}h1{font-size:30px;letter-spacing:-1px;margin:7px 0 18px}h2{font-size:17px;margin:0 0 15px}.muted{color:#9eb0b3;font-size:12px;line-height:1.7}.money{font-size:34px;font-weight:800;letter-spacing:-1px;color:#dcff80;margin:6px 0}.stat{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #30434a;font-size:12px}.boardtab{width:100%;text-align:left;background:transparent;border:1px solid #354a50;border-radius:9px;padding:12px;margin:5px 0}.boardtab.active{border-color:#dbff70;background:#dbff7010;color:#dbff70}.boardtab span{display:block;font-size:11px;color:#9eb0b3;margin-top:4px}.stage{border:1px solid #3a4c52;border-radius:18px;overflow:hidden;background:#102027;position:relative}.stagebar{display:flex;justify-content:space-between;align-items:center;padding:15px 18px;background:#1b2e35}.live{font-size:10px;color:#dbff70;letter-spacing:1px}.live:before{content:'●';margin-right:7px}canvas{display:block;width:100%;touch-action:none;aspect-ratio:600/700}.stagefoot{padding:13px 18px;border-top:1px solid #30434a;color:#a8bbbd;font-size:11px;display:flex;justify-content:space-between}.upgrade{display:block;width:100%;text-align:left;border:1px solid #3d5359;background:#21353c;border-radius:11px;padding:14px;margin:10px 0}.upgrade strong{display:block;font-size:14px}.upgrade .row{display:flex;justify-content:space-between;margin-top:10px;font-size:12px;color:#dbff70}.primary{width:100%;background:#dcff80;color:#14251f;font-weight:800;border:0;border-radius:10px;padding:14px;margin-top:12px}.progress{height:5px;background:#33464c;border-radius:8px;overflow:hidden;margin:13px 0}.progress i{display:block;height:100%;background:#dbff70;transition:width .3s}.module{display:flex;align-items:center;gap:10px;font-size:12px;margin:15px 0}.dot{width:25px;height:25px;border-radius:7px;background:#92dcca;color:#18322e;display:grid;place-items:center;font-weight:800}.tip{margin-top:20px;padding:14px;border-left:2px solid #e8ac80;background:#e8ac8008}.toast{position:fixed;bottom:25px;left:50%;transform:translateX(-50%);background:#dbff70;color:#152b20;padding:12px 22px;border-radius:10px;z-index:5;opacity:0;pointer-events:none;transition:opacity .2s}dialog{background:#1b3038;color:#eaf2ed;border:1px solid #557176;border-radius:18px;max-width:440px;padding:28px}dialog::backdrop{background:#0009}footer{max-width:1300px;margin:20px auto;padding:0 30px 20px;color:#738e93;font-size:10px;display:flex;justify-content:space-between}@media(max-width:1050px){.layout{grid-template-columns:170px minmax(280px,1fr)}.right{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:20px}.upgrades{grid-column:2;grid-row:1/4}}@media(max-width:650px){header{padding:16px}.layout{padding:0 12px;gap:12px;margin:12px auto;display:flex;flex-direction:column}.left{display:flex;flex-wrap:wrap;gap:10px}.left .panel{width:100%}.left .boards{display:block;margin-top:0!important}.left .boards #boards{display:flex;overflow:auto;gap:8px}.left .boards h2{display:none}.left .boards .boardtab{min-width:150px;margin:0}.left h1{font-size:20px;margin:0}.left .money{font-size:27px}.left .stat{display:inline-flex;width:31%;gap:4px;border:0}.right{display:block}.panel{padding:14px}.stagefoot{font-size:10px}.brand{font-size:19px}footer{padding:0 15px 20px}}
+
+button:focus-visible,select:focus-visible,canvas:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.stage canvas{max-height:calc(100dvh - 230px);width:auto;max-width:100%;margin:auto;aspect-ratio:600/700}
+.stage{background:#102027}.controls{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:12px 0;font-size:12px}
+select{background:#21353c;color:#eaf2ed;border:1px solid #6d8d92;border-radius:8px;padding:10px;font:inherit;min-height:44px}
+.stagefoot{gap:10px;flex-wrap:wrap}.toast{max-width:90vw}textarea{width:100%;height:240px;background:#102027;color:#eaf2ed;border:1px solid #557176;padding:12px}
+dialog{max-height:90dvh;overflow:auto}button{min-height:44px}#selection{color:#c5dbd6}#boardtip{min-height:42px}
+@media(max-width:650px){header .eyebrow{display:none}.stage canvas{max-height:none;width:100%}.layout>section{order:-1}.left .stat{width:auto;margin-right:12px}.left .boards .boardtab{min-width:170px}.money{margin:0}.stagebar{padding:10px 14px}header{gap:8px}.headbuttons{gap:4px}button.small{padding:8px 10px}.stagefoot span:first-child{max-width:70%}}
+@media(prefers-reduced-motion:reduce){.progress i,.toast{transition:none}}
+</style><style>
+/* Fit the existing interface inside a portal iframe. Scroll stays in panels. */
+html,body{height:100%;overflow:hidden;overscroll-behavior:none}
+body{display:flex;flex-direction:column}
+header{width:100%;height:48px;min-height:48px;padding:4px 14px}
+header .eyebrow{display:none}.brand{font-size:18px}
+.layout{display:grid;width:100%;max-width:none;flex:1;min-height:0;margin:0;padding:8px;gap:8px;grid-template-columns:150px minmax(160px,1fr) 230px}
+.left{display:block}
+.left,.right{min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin}
+.right{display:block;grid-column:auto}.right .panel{margin-top:8px!important}
+.right .panel:first-child{margin-top:0!important}
+.layout>section{order:initial;display:flex;flex-direction:column;min-height:0;gap:4px}
+.stage{flex:1;min-height:0;display:flex;flex-direction:column}
+.stagebar{padding:5px 10px;min-height:49px}.stagebar .small{padding:4px 8px;min-height:36px}
+.boardwrap{flex:1;min-height:0;display:grid;place-items:center;overflow:hidden}
+.stage canvas{display:block;max-width:none;max-height:none;margin:0;flex:none}
+.stagefoot{padding:4px 8px;font-size:10px;min-height:24px}
+#burst{margin:0;padding:7px;min-height:40px}
+.layout>section>p{margin:0;font-size:11px;line-height:1.3}
+#boardtip{min-height:0}.controls{margin:0;gap:5px;font-size:11px}
+.controls select{padding:4px;min-height:32px}.controls button{padding:4px 7px;min-height:32px}
+#selection{display:none}.controls+p,.layout>section>p:last-child{display:none}
+.panel{padding:10px;border-radius:12px}h1{font-size:22px;margin:4px 0 8px}
+.money{font-size:27px}.stat{padding:6px 0}.boardtab{padding:7px;margin:3px 0}
+.upgrade{padding:8px;margin:6px 0}.upgrade .row{margin-top:4px}
+.right .panel:last-child{display:none}
+footer{display:none}
+dialog{width:min(440px,94vw);padding:18px;max-height:94dvh;overscroll-behavior:contain}
+dialog h1{font-size:24px}dialog .muted{line-height:1.5}
+button,select{touch-action:manipulation}
+@media(max-width:900px) and (orientation:landscape){
+  header{height:40px;min-height:40px}.layout{grid-template-columns:105px minmax(120px,1fr) 185px;padding:4px;gap:5px}
+  .left>.panel:first-child{display:none}.left .boards{margin-top:0!important}
+  .left .boards #boards{display:block;overflow:visible}
+  .left .boards .boardtab{min-width:0;width:100%}
+  .boardtab{font-size:11px}.boardtab span{font-size:10px}.boards h2{font-size:13px;margin-bottom:5px}
+  .stagebar{min-height:42px;font-size:12px}.stagebar .eyebrow{font-size:9px}
+  .stagebar .eyebrow{display:none}.stagebar>div:last-child{display:flex;align-items:center;gap:5px}
+  .stagebar>div:last-child>div{display:flex;align-items:center;gap:4px}.stagebar .live{font-size:8px}
+  .stagefoot{min-height:18px;padding:2px 6px}.stagefoot span:first-child{display:none}
+  #boardtip{display:none}.controls{height:32px;flex-wrap:nowrap}.controls label{display:none}
+  #flowstats{font-size:10px}#burst{min-height:34px}
+  .panel h2{font-size:14px;margin-bottom:5px}.progress{margin:5px 0}.primary{padding:8px;margin-top:5px}
+  .muted{font-size:11px}.upgrade strong{font-size:12px}.upgrade .row{font-size:11px}
+}
+@media(orientation:portrait){
+  header{height:44px;min-height:44px}.layout{display:flex;flex-direction:column;padding:5px;gap:5px}
+  .layout>section{order:0;flex:1}.left{order:1;flex:0 0 51px;overflow:hidden;display:block}
+  .left>.panel:first-child{display:none}.left .boards{margin:0!important;padding:0;border:0;background:none}
+  .boards h2{display:none}.left .boards #boards{display:flex;overflow-x:auto;gap:5px;overscroll-behavior:contain}
+  .left .boards .boardtab{width:auto;min-width:155px;height:46px;margin:0;padding:4px 8px;font-size:11px}
+  .right{order:2;flex:0 0 173px;display:grid;grid-template-columns:1fr 1.15fr;gap:5px;overflow:hidden}
+  .right>.panel{min-height:0;overflow:auto;overscroll-behavior:contain;margin:0!important}
+  .right>.panel:last-child{display:none}
+  .right .upgrades{grid-column:auto;grid-row:auto}
+  .right h2{font-size:13px;margin:0 0 5px!important}.right .eyebrow{font-size:9px}
+  .right .progress{margin:5px 0}.right .primary{margin-top:4px;padding:7px;min-height:36px;font-size:12px}
+  .right .muted{font-size:10px;line-height:1.4}
+  .upgrade{padding:6px;margin:5px 0;min-height:44px}.upgrade strong{font-size:12px}.upgrade .row{font-size:10px}
+  .controls,.controls+p{display:none}#boardtip{display:none}
+  #flowstats{font-size:10px}.stagebar{min-height:46px}.stagefoot{min-height:20px;padding:2px 5px}
+  .stagefoot span:first-child{max-width:none;font-size:9px}
+}
+@media(pointer:coarse){.controls{display:none}}
+
+</style></head><body><header><div class="brand"><b>●</b> BALL CASCADE <span class="eyebrow" style="margin-left:14px">Atelier 452</span></div><div class="headbuttons"><button class="small" id="sound" aria-label="Toggle sound">Sound off</button><button class="small" id="help">?</button></div></header><main class="layout"><aside class="left"><section class="panel"><div class="eyebrow">Your little money machine</div><h1>Make it rain.</h1><div class="muted">AVAILABLE BALANCE</div><div class="money" id="balance">$0</div><div class="stat">Lifetime <b id="total">$0</b></div><div class="stat">Collected <b id="collected">0</b></div><div class="stat">Ball value <b id="value">$1</b></div></section><section class="panel boards" style="margin-top:16px"><h2>The journey</h2><div id="boards"></div></section></aside><section><div class="stage"><div class="stagebar"><div><div class="eyebrow" id="boardnum">BOARD 01 / 06</div><b id="boardname">First light</b></div><div style="text-align:right"><span class="live" id="status">FLOWING</span><div><b id="stagecash" style="color:#dbff70">$0</b> <button class="small" id="pauseTop">Pause</button></div></div></div><div class="boardwrap"><canvas id="game" tabindex="0" width="600" height="700" aria-label="Cascade board. Select emitter or module below, then use arrow keys to move. Shift moves faster. Space drops burst, Escape pauses."></canvas></div><div class="stagefoot"><span>Drag modules · Tap the top to aim</span><span id="active">0 balls</span></div></div><button class="primary" id="burst">DROP A BURST · 10 BALLS</button><p class="muted" id="flowstats" style="text-align:center">$0/s · best pockets 0%</p><p class="muted" id="boardtip"></p><p class="muted">Focus the board, then use arrows · Shift = faster · Space = burst · Esc = pause. Burst cooldown pauses with the game.</p></section><aside class="right"><section class="panel"><div class="eyebrow">Next discovery</div><h2 id="goalname" style="margin-top:8px">Unlock Mint machine</h2><div class="progress"><i id="goalbar"></i></div><div class="muted" id="goaltext"></div><button class="primary" id="next">Unlock board</button></section><section class="panel upgrades" style="margin-top:16px"><h2>Tune your cascade</h2><div id="shop"></div><div class="muted">Upgrades carry across every board.</div></section><section class="panel" style="margin-top:16px"><h2>A little engineering</h2><div class="module"><span class="dot">×2</span><span>Multiplier<br><span class="muted">Double a ball's value</span></span></div><div class="module"><span class="dot" style="background:#e7acff">⑂</span><span>Splitter<br><span class="muted">One ball becomes two</span></span></div><div class="module"><span class="dot" style="background:#ffba84">↗</span><span>Kicker<br><span class="muted">Send the flow sideways</span></span></div><div class="tip muted">Bright pockets pay the most. Each module works once per ball. Split early, multiply both branches, then compare your $/s. Module layouts save per board.</div><button class="small" id="pause" style="width:100%;margin-top:15px">Pause flow</button></section></aside></main><div class="toast" role="status" id="toast"></div><dialog id="guide"><div class="eyebrow">Welcome to Ball Cascade</div><h1>Build a better bounce.</h1><p class="muted">Balls drop automatically. Every ball that lands earns money. Bright pockets pay the most; their values change between boards.</p><p class="muted">Drag the colored modules to shape your cascade. Each ball can use each module once. Tap the top of the board to move the emitter.</p><p class="muted">Buy upgrades, unlock all six boards, and chase a million. Your progress saves automatically. Burst recharges every 8 seconds of active play. No earnings while paused or away. Aim, modules and earned upgrades save here; balls in flight restart on reload.</p><p class="muted" id="savestate">Progress saved on this device</p><div class="controls"><label for="modulepick">Keyboard target</label><select id="modulepick"></select><span id="selection" role="status"></span></div><div class="guideActions"><button class="small" id="restore">Restore layout</button> <button class="small" id="reset">Reset progress</button></div><button class="primary" id="close">Let's roll</button></dialog><dialog id="complete" aria-labelledby="completetitle"><div class="eyebrow">Journey complete</div><h1 id="completetitle">A million little bounces.</h1><p class="muted" id="completetime"></p><p class="muted">You built the whole cascade. Keep tuning your layouts, revisit any board, or revisit your favourite layout. Your progress stays saved.</p><button class="primary" id="continue">Keep experimenting</button></dialog><dialog id="resetdialog" aria-labelledby="resettitle"><h2 id="resettitle">Start a new cascade?</h2><p class="muted">This removes earned money, upgrades and all six board layouts on this device. This cannot be undone.</p><button class="primary" id="resetcancel" autofocus>Keep my progress</button><button class="small" id="resetconfirm" style="width:100%;margin-top:12px">Reset all progress</button></dialog><script>
+'use strict';
+// Playtesting integration only. No advertising, rewards or extra analytics.
+(() => {
+  let sdk=null, active=false, desired=false, input=false;
+  const portal=window.Portal={ready:false,interacted:false,startup:null,
+    update(wantsPlay){desired=!!wantsPlay;flush();},
+    input(){input=true;portal.interacted=true;flush();},
+    stop(){desired=false;flush();}
+  };
+  function call(name){try{sdk?.[name]?.();}catch{/* A platform failure must not stop the game. */}}
+  function flush(){
+    const next=portal.ready&&input&&desired;
+    if(next===active)return;
+    active=next;
+    if(sdk)call(next?'gameplayStart':'gameplayStop');
+  }
+  function deadline(promise,ms){
+    return new Promise((resolve,reject)=>{
+      const timer=setTimeout(()=>reject(new Error('SDK timeout')),ms);
+      Promise.resolve(promise).then(v=>{clearTimeout(timer);resolve(v);},e=>{clearTimeout(timer);reject(e);});
+    });
+  }
+  async function initialize(){
+    try{
+      if(!window.PokiSDK)await deadline(new Promise((resolve,reject)=>{
+        const script=document.createElement('script');
+        script.src='https://game-cdn.poki.com/scripts/v2/poki-sdk.js';
+        script.async=true;script.onload=resolve;script.onerror=reject;
+        document.head.appendChild(script);
+      }),4000);
+      const candidate=window.PokiSDK;
+      if(!candidate)throw new Error('SDK unavailable');
+      await deadline(candidate.init(),4000);
+      sdk=candidate;
+      call('gameLoadingFinished');
+    }catch{/* Offline/ad-blocked builds still start. No fake SDK events. */}
+    portal.ready=true;flush();
+  }
+  // Called by game.js once its canvas, UI and saved progress are ready.
+  portal.load=()=>portal.startup??=(initialize());
+  window.addEventListener('pagehide',()=>portal.stop());
+})();
+
+</script><script src="game.js"></script></body></html>
+
