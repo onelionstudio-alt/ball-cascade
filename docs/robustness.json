@@ -1,0 +1,911 @@
+{
+  "neighborhood": [
+    {
+      "level": 1,
+      "trials": [
+        {
+          "dx": -15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 0.8888888888888888,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 0.8888888888888888,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 0.8888888888888888,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 0.8888888888888888,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 0.8888888888888888,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 0.8888888888888888,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 0.8333333333333334,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 0.8333333333333334,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 0.8333333333333334,
+          "reason": ""
+        }
+      ],
+      "won": 9
+    },
+    {
+      "level": 2,
+      "trials": [
+        {
+          "dx": -15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 0.9,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 0.9,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 0.9,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 0.8333333333333334,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 0.8333333333333334,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 0.8333333333333334,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 0.8333333333333334,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 0.8333333333333334,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 0.8333333333333334,
+          "reason": ""
+        }
+      ],
+      "won": 9
+    },
+    {
+      "level": 3,
+      "trials": [
+        {
+          "dx": -15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 0.9583333333333334,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 0.9583333333333334,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 0.9583333333333334,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 0.9583333333333334,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 0.9583333333333334,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 0.9583333333333334,
+          "reason": ""
+        }
+      ],
+      "won": 9
+    },
+    {
+      "level": 4,
+      "trials": [
+        {
+          "dx": -15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        }
+      ],
+      "won": 9
+    },
+    {
+      "level": 5,
+      "trials": [
+        {
+          "dx": -15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 0.9666666666666667,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 0.9666666666666667,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 0.9666666666666667,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 0.9666666666666667,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 0.9666666666666667,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 0.9666666666666667,
+          "reason": ""
+        }
+      ],
+      "won": 9
+    },
+    {
+      "level": 6,
+      "trials": [
+        {
+          "dx": -15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 0.6363636363636364,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 0.6272727272727273,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 0.6454545454545455,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 0.7181818181818181,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 0.7363636363636363,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 0.7727272727272727,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 0.7090909090909091,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 0.7181818181818181,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 0.7727272727272727,
+          "reason": ""
+        }
+      ],
+      "won": 9
+    },
+    {
+      "level": 7,
+      "trials": [
+        {
+          "dx": -15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 0.85,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 0.85,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 0.85,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 0.8875,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 0.8875,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 0.8875,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 0.85,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 0.85,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 0.85,
+          "reason": ""
+        }
+      ],
+      "won": 9
+    },
+    {
+      "level": 8,
+      "trials": [
+        {
+          "dx": -15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 0.9666666666666667,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 0.9666666666666667,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 0.9833333333333333,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 0.9333333333333333,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 0.95,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 0.95,
+          "reason": ""
+        }
+      ],
+      "won": 9
+    },
+    {
+      "level": 9,
+      "trials": [
+        {
+          "dx": -15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        }
+      ],
+      "won": 9
+    },
+    {
+      "level": 10,
+      "trials": [
+        {
+          "dx": -15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 0.9727272727272728,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 0.9727272727272728,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 0.9727272727272728,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 0.9727272727272728,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 0.9727272727272728,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 0.9727272727272728,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 0.9727272727272728,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 0.9727272727272728,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 0.9727272727272728,
+          "reason": ""
+        }
+      ],
+      "won": 9
+    },
+    {
+      "level": 11,
+      "trials": [
+        {
+          "dx": -15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": -12,
+          "status": "lost",
+          "efficiency": 1,
+          "reason": "Pocket 2: 9/21."
+        },
+        {
+          "dx": 15,
+          "dy": 0,
+          "status": "lost",
+          "efficiency": 1,
+          "reason": "Pocket 2: 6/21."
+        },
+        {
+          "dx": 15,
+          "dy": 12,
+          "status": "lost",
+          "efficiency": 1,
+          "reason": "Pocket 2: 6/21."
+        }
+      ],
+      "won": 6
+    },
+    {
+      "level": 12,
+      "trials": [
+        {
+          "dx": -15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": -15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 0,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": -12,
+          "status": "won",
+          "efficiency": 0.9857142857142858,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": 0,
+          "status": "won",
+          "efficiency": 0.9857142857142858,
+          "reason": ""
+        },
+        {
+          "dx": 15,
+          "dy": 12,
+          "status": "won",
+          "efficiency": 1,
+          "reason": ""
+        }
+      ],
+      "won": 9
+    }
+  ],
+  "maxUpgradeRows": [
+    {
+      "level": 1,
+      "status": "won",
+      "efficiency": 0.7777777777777778,
+      "reason": ""
+    },
+    {
+      "level": 2,
+      "status": "won",
+      "efficiency": 0.7333333333333333,
+      "reason": ""
+    },
+    {
+      "level": 3,
+      "status": "won",
+      "efficiency": 0.8055555555555556,
+      "reason": ""
+    },
+    {
+      "level": 4,
+      "status": "won",
+      "efficiency": 1,
+      "reason": ""
+    },
+    {
+      "level": 5,
+      "status": "won",
+      "efficiency": 0.8,
+      "reason": ""
+    },
+    {
+      "level": 6,
+      "status": "won",
+      "efficiency": 0.5727272727272728,
+      "reason": ""
+    },
+    {
+      "level": 7,
+      "status": "won",
+      "efficiency": 0.65,
+      "reason": ""
+    },
+    {
+      "level": 8,
+      "status": "won",
+      "efficiency": 0.95,
+      "reason": ""
+    },
+    {
+      "level": 9,
+      "status": "won",
+      "efficiency": 0.9375,
+      "reason": ""
+    },
+    {
+      "level": 10,
+      "status": "won",
+      "efficiency": 0.9181818181818182,
+      "reason": ""
+    },
+    {
+      "level": 11,
+      "status": "won",
+      "efficiency": 1,
+      "reason": ""
+    },
+    {
+      "level": 12,
+      "status": "won",
+      "efficiency": 0.9857142857142858,
+      "reason": ""
+    }
+  ],
+  "earnedUpgrades": {
+    "flow": 6,
+    "precision": 6,
+    "burst": 6
+  }
+}

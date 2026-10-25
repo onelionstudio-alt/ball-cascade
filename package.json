@@ -1,0 +1,12 @@
+{
+  "name": "ball-cascade",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "balance": "node tools/campaign.js && node tools/strategies.js && node tools/robustness.js",
+    "build": "node tools/build.js",
+    "serve": "node tools/serve.js"
+  }
+}
