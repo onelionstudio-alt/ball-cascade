@@ -1,0 +1,1220 @@
+[
+  {
+    "level": 1,
+    "name": "First Light",
+    "strategies": {
+      "weak": {
+        "status": "lost",
+        "duration": 15.533333333333092,
+        "efficiency": 1,
+        "counts": [
+          0,
+          0,
+          36,
+          0,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 180,
+        "reason": "Boosted target balls: 0/8.",
+        "plan": {
+          "aim": 480,
+          "modules": [
+            [
+              180,
+              220
+            ]
+          ]
+        }
+      },
+      "medium": {
+        "status": "lost",
+        "duration": 15.533333333333092,
+        "efficiency": 0.8888888888888888,
+        "counts": [
+          0,
+          0,
+          32,
+          0,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 168,
+        "reason": "Boosted target balls: 0/8.",
+        "plan": {
+          "aim": 530,
+          "modules": [
+            [
+              185,
+              220
+            ]
+          ]
+        }
+      },
+      "strong": {
+        "status": "won",
+        "duration": 15.533333333333092,
+        "efficiency": 0.8888888888888888,
+        "counts": [
+          0,
+          0,
+          32,
+          0,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 318,
+        "reason": "",
+        "plan": {
+          "aim": 530,
+          "modules": [
+            [
+              480,
+              220
+            ]
+          ]
+        }
+      }
+    }
+  },
+  {
+    "level": 2,
+    "name": "Moving Walls",
+    "strategies": {
+      "weak": {
+        "status": "lost",
+        "duration": 47.73333333333127,
+        "efficiency": 0.044444444444444446,
+        "counts": [
+          0,
+          3,
+          0,
+          1,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 429,
+        "reason": "Target deliveries: 4/28.",
+        "plan": {
+          "aim": 480,
+          "modules": [
+            [
+              130,
+              245
+            ],
+            [
+              840,
+              365
+            ]
+          ]
+        }
+      },
+      "medium": {
+        "status": "won",
+        "duration": 50.76666666666443,
+        "efficiency": 0.8333333333333334,
+        "counts": [
+          0,
+          75,
+          0,
+          0,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 206,
+        "reason": "",
+        "plan": {
+          "aim": 280,
+          "modules": [
+            [
+              135,
+              245
+            ],
+            [
+              845,
+              365
+            ]
+          ]
+        }
+      },
+      "strong": {
+        "status": "won",
+        "duration": 50.76666666666443,
+        "efficiency": 0.8333333333333334,
+        "counts": [
+          0,
+          75,
+          0,
+          0,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 410,
+        "reason": "",
+        "plan": {
+          "aim": 280,
+          "modules": [
+            [
+              280,
+              180
+            ],
+            [
+              820,
+              365
+            ]
+          ]
+        }
+      }
+    }
+  },
+  {
+    "level": 3,
+    "name": "Danger Zone",
+    "strategies": {
+      "weak": {
+        "status": "lost",
+        "duration": 34.674999999998676,
+        "efficiency": 0,
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 1,
+        "score": 0,
+        "reason": "Target deliveries: 0/27. Target efficiency 0%: need 60%.",
+        "plan": {
+          "aim": 480,
+          "modules": [
+            [
+              770,
+              220
+            ],
+            [
+              840,
+              370
+            ]
+          ]
+        }
+      },
+      "medium": {
+        "status": "won",
+        "duration": 35.13333333333198,
+        "efficiency": 1,
+        "counts": [
+          0,
+          72,
+          0,
+          0,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 144,
+        "reason": "",
+        "plan": {
+          "aim": 285,
+          "modules": [
+            [
+              775,
+              220
+            ],
+            [
+              845,
+              370
+            ]
+          ]
+        }
+      },
+      "strong": {
+        "status": "won",
+        "duration": 35.13333333333198,
+        "efficiency": 1,
+        "counts": [
+          0,
+          72,
+          0,
+          0,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 288,
+        "reason": "",
+        "plan": {
+          "aim": 285,
+          "modules": [
+            [
+              285,
+              200
+            ],
+            [
+              820,
+              370
+            ]
+          ]
+        }
+      }
+    }
+  },
+  {
+    "level": 4,
+    "name": "Split Decision",
+    "strategies": {
+      "weak": {
+        "status": "lost",
+        "duration": 62.09999999999712,
+        "efficiency": 0.3,
+        "counts": [
+          0,
+          11,
+          0,
+          16,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0.14444444444444443,
+        "score": 304,
+        "reason": "Pocket 2: 11/14.",
+        "plan": {
+          "aim": 480,
+          "modules": [
+            [
+              150,
+              180
+            ],
+            [
+              180,
+              335
+            ],
+            [
+              825,
+              335
+            ]
+          ]
+        }
+      },
+      "medium": {
+        "status": "lost",
+        "duration": 62.09999999999712,
+        "efficiency": 0.3,
+        "counts": [
+          0,
+          11,
+          0,
+          16,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0.14444444444444443,
+        "score": 304,
+        "reason": "Pocket 2: 11/14.",
+        "plan": {
+          "aim": 480,
+          "modules": [
+            [
+              155,
+              180
+            ],
+            [
+              185,
+              335
+            ],
+            [
+              830,
+              335
+            ]
+          ]
+        }
+      },
+      "strong": {
+        "status": "won",
+        "duration": 48.99999999999786,
+        "efficiency": 1,
+        "counts": [
+          0,
+          59,
+          0,
+          90,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 373,
+        "reason": "",
+        "plan": {
+          "aim": 480,
+          "modules": [
+            [
+              480,
+              175
+            ],
+            [
+              340,
+              335
+            ],
+            [
+              620,
+              335
+            ]
+          ]
+        }
+      }
+    }
+  },
+  {
+    "level": 5,
+    "name": "Wind Tunnel",
+    "strategies": {
+      "weak": {
+        "status": "lost",
+        "duration": 47.73333333333127,
+        "efficiency": 0.26666666666666666,
+        "counts": [
+          0,
+          0,
+          24,
+          0,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 252,
+        "reason": "Target deliveries: 24/45. Target efficiency 27%: need 65%.",
+        "plan": {
+          "aim": 480,
+          "modules": [
+            [
+              810,
+              230
+            ],
+            [
+              150,
+              385
+            ]
+          ]
+        }
+      },
+      "medium": {
+        "status": "won",
+        "duration": 47.73333333333127,
+        "efficiency": 1,
+        "counts": [
+          0,
+          0,
+          90,
+          0,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 450,
+        "reason": "",
+        "plan": {
+          "aim": 370,
+          "modules": [
+            [
+              815,
+              230
+            ],
+            [
+              155,
+              385
+            ]
+          ]
+        }
+      },
+      "strong": {
+        "status": "won",
+        "duration": 47.73333333333127,
+        "efficiency": 1,
+        "counts": [
+          0,
+          0,
+          90,
+          0,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 870,
+        "reason": "",
+        "plan": {
+          "aim": 370,
+          "modules": [
+            [
+              430,
+              245
+            ],
+            [
+              130,
+              385
+            ]
+          ]
+        }
+      }
+    }
+  },
+  {
+    "level": 6,
+    "name": "The Crusher",
+    "strategies": {
+      "weak": {
+        "status": "lost",
+        "duration": 61.73333333333047,
+        "efficiency": 0.6272727272727273,
+        "counts": [
+          0,
+          0,
+          69,
+          0,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0.37272727272727274,
+        "score": 345,
+        "reason": "Lost 37%: maximum 35%.",
+        "plan": {
+          "aim": 480,
+          "modules": [
+            [
+              820,
+              180
+            ],
+            [
+              820,
+              380
+            ]
+          ]
+        }
+      },
+      "medium": {
+        "status": "lost",
+        "duration": 61.73333333333047,
+        "efficiency": 0.06363636363636363,
+        "counts": [
+          0,
+          0,
+          7,
+          0,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0.00909090909090909,
+        "score": 236,
+        "reason": "Target deliveries: 7/30.",
+        "plan": {
+          "aim": 220,
+          "modules": [
+            [
+              825,
+              180
+            ],
+            [
+              825,
+              380
+            ]
+          ]
+        }
+      },
+      "strong": {
+        "status": "won",
+        "duration": 62.674999999997084,
+        "efficiency": 0.7363636363636363,
+        "counts": [
+          0,
+          0,
+          81,
+          0,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0.18181818181818182,
+        "score": 837,
+        "reason": "",
+        "plan": {
+          "aim": 220,
+          "modules": [
+            [
+              220,
+              195
+            ],
+            [
+              220,
+              380
+            ]
+          ]
+        }
+      }
+    }
+  },
+  {
+    "level": 7,
+    "name": "Portal Lab",
+    "strategies": {
+      "weak": {
+        "status": "lost",
+        "duration": 40.733333333331665,
+        "efficiency": 0,
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 391,
+        "reason": "Target deliveries: 0/24. Portal deliveries: 0/24.",
+        "plan": {
+          "aim": 480,
+          "modules": [
+            [
+              720,
+              200
+            ],
+            [
+              620,
+              400
+            ]
+          ]
+        }
+      },
+      "medium": {
+        "status": "won",
+        "duration": 40.74999999999833,
+        "efficiency": 0.8875,
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          71
+        ],
+        "chains": 0,
+        "portal": 71,
+        "lossRate": 0,
+        "score": 89,
+        "reason": "",
+        "plan": {
+          "aim": 265,
+          "modules": [
+            [
+              725,
+              200
+            ],
+            [
+              625,
+              400
+            ]
+          ]
+        }
+      },
+      "strong": {
+        "status": "won",
+        "duration": 40.74999999999833,
+        "efficiency": 0.8875,
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          71
+        ],
+        "chains": 0,
+        "portal": 71,
+        "lossRate": 0,
+        "score": 178,
+        "reason": "",
+        "plan": {
+          "aim": 265,
+          "modules": [
+            [
+              265,
+              170
+            ],
+            [
+              600,
+              400
+            ]
+          ]
+        }
+      }
+    }
+  },
+  {
+    "level": 8,
+    "name": "Gravity Shift",
+    "strategies": {
+      "weak": {
+        "status": "lost",
+        "duration": 68.7333333333341,
+        "efficiency": 0.125,
+        "counts": [
+          0,
+          5,
+          0,
+          10,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 555,
+        "reason": "Pocket 2: 5/20. Pocket 4: 10/20.",
+        "plan": {
+          "aim": 480,
+          "modules": [
+            [
+              160,
+              180
+            ],
+            [
+              160,
+              350
+            ],
+            [
+              840,
+              350
+            ]
+          ]
+        }
+      },
+      "medium": {
+        "status": "lost",
+        "duration": 68.7333333333341,
+        "efficiency": 0.125,
+        "counts": [
+          0,
+          5,
+          0,
+          10,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 555,
+        "reason": "Pocket 2: 5/20. Pocket 4: 10/20.",
+        "plan": {
+          "aim": 480,
+          "modules": [
+            [
+              165,
+              180
+            ],
+            [
+              165,
+              350
+            ],
+            [
+              845,
+              350
+            ]
+          ]
+        }
+      },
+      "strong": {
+        "status": "won",
+        "duration": 69.20833333333448,
+        "efficiency": 0.9666666666666667,
+        "counts": [
+          0,
+          63,
+          0,
+          114,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 539,
+        "reason": "",
+        "plan": {
+          "aim": 480,
+          "modules": [
+            [
+              480,
+              175
+            ],
+            [
+              330,
+              345
+            ],
+            [
+              630,
+              345
+            ]
+          ]
+        }
+      }
+    }
+  },
+  {
+    "level": 9,
+    "name": "Chain Reaction",
+    "strategies": {
+      "weak": {
+        "status": "lost",
+        "duration": 40.733333333331665,
+        "efficiency": 1,
+        "counts": [
+          0,
+          0,
+          80,
+          0,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 400,
+        "reason": "Three-hit reactions: 0/8.",
+        "plan": {
+          "aim": 480,
+          "modules": [
+            [
+              810,
+              190
+            ],
+            [
+              820,
+              410
+            ]
+          ]
+        }
+      },
+      "medium": {
+        "status": "won",
+        "duration": 44.07499999999814,
+        "efficiency": 1,
+        "counts": [
+          0,
+          77,
+          71,
+          0,
+          0
+        ],
+        "chains": 68,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 373,
+        "reason": "",
+        "plan": {
+          "aim": 320,
+          "modules": [
+            [
+              815,
+              190
+            ],
+            [
+              825,
+              410
+            ]
+          ]
+        }
+      },
+      "strong": {
+        "status": "won",
+        "duration": 44.07499999999814,
+        "efficiency": 1,
+        "counts": [
+          0,
+          77,
+          71,
+          0,
+          0
+        ],
+        "chains": 68,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 746,
+        "reason": "",
+        "plan": {
+          "aim": 320,
+          "modules": [
+            [
+              320,
+              190
+            ],
+            [
+              800,
+              410
+            ]
+          ]
+        }
+      }
+    }
+  },
+  {
+    "level": 10,
+    "name": "The Maze",
+    "strategies": {
+      "weak": {
+        "status": "lost",
+        "duration": 78.2000000000083,
+        "efficiency": 0.7545454545454545,
+        "counts": [
+          0,
+          45,
+          0,
+          38,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0.24545454545454545,
+        "score": 332,
+        "reason": "Target efficiency 75%: need 90%.",
+        "plan": {
+          "aim": 480,
+          "modules": [
+            [
+              500,
+              180
+            ],
+            [
+              500,
+              400
+            ]
+          ]
+        }
+      },
+      "medium": {
+        "status": "won",
+        "duration": 61.73333333333047,
+        "efficiency": 0.9727272727272728,
+        "counts": [
+          0,
+          107,
+          0,
+          0,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 229,
+        "reason": "",
+        "plan": {
+          "aim": 300,
+          "modules": [
+            [
+              505,
+              180
+            ],
+            [
+              505,
+              400
+            ]
+          ]
+        }
+      },
+      "strong": {
+        "status": "won",
+        "duration": 61.73333333333047,
+        "efficiency": 0.9727272727272728,
+        "counts": [
+          0,
+          107,
+          0,
+          0,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 458,
+        "reason": "",
+        "plan": {
+          "aim": 300,
+          "modules": [
+            [
+              300,
+              185
+            ],
+            [
+              850,
+              400
+            ]
+          ]
+        }
+      }
+    },
+    "alternate": {
+      "status": "won",
+      "efficiency": 0.9727272727272728,
+      "reason": "",
+      "plan": {
+        "aim": 660,
+        "modules": [
+          [
+            660,
+            185
+          ],
+          [
+            120,
+            400
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "level": 11,
+    "name": "Chaos Factory",
+    "strategies": {
+      "weak": {
+        "status": "lost",
+        "duration": 75.43333333333943,
+        "efficiency": 0,
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0.9769230769230769,
+        "score": 15,
+        "reason": "Pocket 2: 0/21. Pocket 4: 0/21. Lost 98%: maximum 30%.",
+        "plan": {
+          "aim": 480,
+          "modules": [
+            [
+              155,
+              180
+            ],
+            [
+              150,
+              350
+            ],
+            [
+              850,
+              350
+            ]
+          ]
+        }
+      },
+      "medium": {
+        "status": "lost",
+        "duration": 75.43333333333943,
+        "efficiency": 0,
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0.9769230769230769,
+        "score": 15,
+        "reason": "Pocket 2: 0/21. Pocket 4: 0/21. Lost 98%: maximum 30%.",
+        "plan": {
+          "aim": 480,
+          "modules": [
+            [
+              160,
+              180
+            ],
+            [
+              155,
+              350
+            ],
+            [
+              855,
+              350
+            ]
+          ]
+        }
+      },
+      "strong": {
+        "status": "won",
+        "duration": 76.20000000000671,
+        "efficiency": 1,
+        "counts": [
+          0,
+          57,
+          0,
+          130,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 520,
+        "reason": "",
+        "plan": {
+          "aim": 480,
+          "modules": [
+            [
+              480,
+              170
+            ],
+            [
+              325,
+              365
+            ],
+            [
+              635,
+              365
+            ]
+          ]
+        }
+      }
+    }
+  },
+  {
+    "level": 12,
+    "name": "Cascade Master",
+    "strategies": {
+      "weak": {
+        "status": "lost",
+        "duration": 82.5166666666784,
+        "efficiency": 0.03571428571428571,
+        "counts": [
+          0,
+          1,
+          0,
+          4,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0.95,
+        "score": 20,
+        "reason": "Pocket 2: 1/24. Pocket 4: 4/24. Target efficiency 4%: need 60%. Lost 95%: maximum 25%.",
+        "plan": {
+          "aim": 480,
+          "modules": [
+            [
+              150,
+              175
+            ],
+            [
+              140,
+              350
+            ],
+            [
+              850,
+              350
+            ],
+            [
+              150,
+              410
+            ]
+          ]
+        }
+      },
+      "medium": {
+        "status": "lost",
+        "duration": 82.5166666666784,
+        "efficiency": 0.03571428571428571,
+        "counts": [
+          0,
+          1,
+          0,
+          4,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0.95,
+        "score": 20,
+        "reason": "Pocket 2: 1/24. Pocket 4: 4/24. Target efficiency 4%: need 60%. Lost 95%: maximum 25%.",
+        "plan": {
+          "aim": 480,
+          "modules": [
+            [
+              155,
+              175
+            ],
+            [
+              145,
+              350
+            ],
+            [
+              855,
+              350
+            ],
+            [
+              155,
+              410
+            ]
+          ]
+        }
+      },
+      "strong": {
+        "status": "won",
+        "duration": 83.20000000001228,
+        "efficiency": 1,
+        "counts": [
+          0,
+          79,
+          0,
+          140,
+          0
+        ],
+        "chains": 0,
+        "portal": 0,
+        "lossRate": 0,
+        "score": 583,
+        "reason": "",
+        "plan": {
+          "aim": 480,
+          "modules": [
+            [
+              480,
+              170
+            ],
+            [
+              325,
+              355
+            ],
+            [
+              635,
+              355
+            ],
+            [
+              120,
+              430
+            ]
+          ]
+        }
+      }
+    }
+  }
+]

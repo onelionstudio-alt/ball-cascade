@@ -1,0 +1,491 @@
+{
+  "strategy": "strong",
+  "completed": 12,
+  "totalSeconds": 539.9416666666478,
+  "rows": [
+    {
+      "level": 1,
+      "name": "First Light",
+      "status": "won",
+      "duration": 15.533333333333092,
+      "attempts": 1,
+      "efficiency": 0.8888888888888888,
+      "lossRate": 0,
+      "counts": [
+        0,
+        0,
+        32,
+        0,
+        0
+      ],
+      "chains": 0,
+      "portal": 0,
+      "reward": 160,
+      "coins": 160,
+      "upgrades": {
+        "flow": 0,
+        "precision": 0,
+        "burst": 0
+      },
+      "reason": "",
+      "plan": {
+        "aim": 530,
+        "modules": [
+          [
+            480,
+            220
+          ]
+        ]
+      }
+    },
+    {
+      "level": 2,
+      "name": "Moving Walls",
+      "status": "won",
+      "duration": 50.45833333333111,
+      "attempts": 1,
+      "efficiency": 0.9,
+      "lossRate": 0,
+      "counts": [
+        0,
+        81,
+        0,
+        0,
+        0
+      ],
+      "chains": 0,
+      "portal": 0,
+      "reward": 195,
+      "coins": 220,
+      "upgrades": {
+        "flow": 1,
+        "precision": 1,
+        "burst": 0
+      },
+      "reason": "",
+      "plan": {
+        "aim": 280,
+        "modules": [
+          [
+            280,
+            180
+          ],
+          [
+            820,
+            365
+          ]
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "name": "Danger Zone",
+      "status": "won",
+      "duration": 31.908333333332163,
+      "attempts": 1,
+      "efficiency": 1,
+      "lossRate": 0,
+      "counts": [
+        0,
+        72,
+        0,
+        0,
+        0
+      ],
+      "chains": 0,
+      "portal": 0,
+      "reward": 230,
+      "coins": 250,
+      "upgrades": {
+        "flow": 1,
+        "precision": 2,
+        "burst": 1
+      },
+      "reason": "",
+      "plan": {
+        "aim": 285,
+        "modules": [
+          [
+            285,
+            200
+          ],
+          [
+            820,
+            370
+          ]
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "name": "Split Decision",
+      "status": "won",
+      "duration": 45.9666666666647,
+      "attempts": 1,
+      "efficiency": 1,
+      "lossRate": 0,
+      "counts": [
+        0,
+        63,
+        0,
+        90,
+        0
+      ],
+      "chains": 0,
+      "portal": 0,
+      "reward": 265,
+      "coins": 355,
+      "upgrades": {
+        "flow": 1,
+        "precision": 3,
+        "burst": 1
+      },
+      "reason": "",
+      "plan": {
+        "aim": 480,
+        "modules": [
+          [
+            480,
+            175
+          ],
+          [
+            340,
+            335
+          ],
+          [
+            620,
+            335
+          ]
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "name": "Wind Tunnel",
+      "status": "won",
+      "duration": 40.908333333331655,
+      "attempts": 1,
+      "efficiency": 0.9333333333333333,
+      "lossRate": 0,
+      "counts": [
+        0,
+        0,
+        84,
+        0,
+        0
+      ],
+      "chains": 0,
+      "portal": 0,
+      "reward": 300,
+      "coins": 340,
+      "upgrades": {
+        "flow": 3,
+        "precision": 3,
+        "burst": 1
+      },
+      "reason": "",
+      "plan": {
+        "aim": 370,
+        "modules": [
+          [
+            430,
+            245
+          ],
+          [
+            130,
+            385
+          ]
+        ]
+      }
+    },
+    {
+      "level": 6,
+      "name": "The Crusher",
+      "status": "won",
+      "duration": 52.474999999997664,
+      "attempts": 1,
+      "efficiency": 0.6454545454545455,
+      "lossRate": 0.21818181818181817,
+      "counts": [
+        0,
+        0,
+        71,
+        0,
+        0
+      ],
+      "chains": 0,
+      "portal": 0,
+      "reward": 295,
+      "coins": 480,
+      "upgrades": {
+        "flow": 3,
+        "precision": 3,
+        "burst": 2
+      },
+      "reason": "",
+      "plan": {
+        "aim": 220,
+        "modules": [
+          [
+            220,
+            195
+          ],
+          [
+            220,
+            380
+          ]
+        ]
+      }
+    },
+    {
+      "level": 7,
+      "name": "Portal Lab",
+      "status": "won",
+      "duration": 30.916666666665552,
+      "attempts": 1,
+      "efficiency": 0.8125,
+      "lossRate": 0,
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        65
+      ],
+      "chains": 0,
+      "portal": 65,
+      "reward": 350,
+      "coins": 610,
+      "upgrades": {
+        "flow": 3,
+        "precision": 3,
+        "burst": 3
+      },
+      "reason": "",
+      "plan": {
+        "aim": 265,
+        "modules": [
+          [
+            265,
+            170
+          ],
+          [
+            600,
+            400
+          ]
+        ]
+      }
+    },
+    {
+      "level": 8,
+      "name": "Gravity Shift",
+      "status": "won",
+      "duration": 56.383333333330775,
+      "attempts": 1,
+      "efficiency": 0.9666666666666667,
+      "lossRate": 0,
+      "counts": [
+        0,
+        62,
+        0,
+        112,
+        0
+      ],
+      "chains": 0,
+      "portal": 0,
+      "reward": 405,
+      "coins": 1015,
+      "upgrades": {
+        "flow": 3,
+        "precision": 3,
+        "burst": 3
+      },
+      "reason": "",
+      "plan": {
+        "aim": 480,
+        "modules": [
+          [
+            480,
+            175
+          ],
+          [
+            330,
+            345
+          ],
+          [
+            630,
+            345
+          ]
+        ]
+      }
+    },
+    {
+      "level": 9,
+      "name": "Chain Reaction",
+      "status": "won",
+      "duration": 34.233333333332034,
+      "attempts": 1,
+      "efficiency": 1,
+      "lossRate": 0,
+      "counts": [
+        0,
+        71,
+        65,
+        0,
+        0
+      ],
+      "chains": 56,
+      "portal": 0,
+      "reward": 440,
+      "coins": 1455,
+      "upgrades": {
+        "flow": 3,
+        "precision": 3,
+        "burst": 3
+      },
+      "reason": "",
+      "plan": {
+        "aim": 320,
+        "modules": [
+          [
+            320,
+            190
+          ],
+          [
+            800,
+            410
+          ]
+        ]
+      }
+    },
+    {
+      "level": 10,
+      "name": "The Maze",
+      "status": "won",
+      "duration": 49.65833333333116,
+      "attempts": 1,
+      "efficiency": 0.9454545454545454,
+      "lossRate": 0,
+      "counts": [
+        0,
+        104,
+        0,
+        0,
+        0
+      ],
+      "chains": 0,
+      "portal": 0,
+      "reward": 475,
+      "coins": 1930,
+      "upgrades": {
+        "flow": 3,
+        "precision": 3,
+        "burst": 3
+      },
+      "reason": "",
+      "plan": {
+        "aim": 300,
+        "modules": [
+          [
+            300,
+            185
+          ],
+          [
+            850,
+            400
+          ]
+        ]
+      }
+    },
+    {
+      "level": 11,
+      "name": "Chaos Factory",
+      "status": "won",
+      "duration": 62.62499999999709,
+      "attempts": 1,
+      "efficiency": 1,
+      "lossRate": 0,
+      "counts": [
+        0,
+        45,
+        0,
+        130,
+        0
+      ],
+      "chains": 0,
+      "portal": 0,
+      "reward": 510,
+      "coins": 2440,
+      "upgrades": {
+        "flow": 3,
+        "precision": 3,
+        "burst": 3
+      },
+      "reason": "",
+      "plan": {
+        "aim": 480,
+        "modules": [
+          [
+            480,
+            170
+          ],
+          [
+            325,
+            365
+          ],
+          [
+            635,
+            365
+          ]
+        ]
+      }
+    },
+    {
+      "level": 12,
+      "name": "Cascade Master",
+      "status": "won",
+      "duration": 68.87500000000088,
+      "attempts": 1,
+      "efficiency": 0.9857142857142858,
+      "lossRate": 0,
+      "counts": [
+        0,
+        69,
+        0,
+        138,
+        0
+      ],
+      "chains": 0,
+      "portal": 0,
+      "reward": 545,
+      "coins": 2985,
+      "upgrades": {
+        "flow": 3,
+        "precision": 3,
+        "burst": 3
+      },
+      "reason": "",
+      "plan": {
+        "aim": 480,
+        "modules": [
+          [
+            480,
+            170
+          ],
+          [
+            325,
+            355
+          ],
+          [
+            635,
+            355
+          ],
+          [
+            120,
+            430
+          ]
+        ]
+      }
+    }
+  ]
+}
