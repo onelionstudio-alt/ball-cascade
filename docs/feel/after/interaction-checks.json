@@ -1,0 +1,68 @@
+{
+  "trustedTouchDrag": true,
+  "pause": true,
+  "reload": true,
+  "mobileExtraGoalFailure": true,
+  "purchase": {
+    "coinsBefore": 160,
+    "coinsAfter": 85,
+    "cost": 75
+  },
+  "shortLandscape": {
+    "canvas": {
+      "x": 149.21875,
+      "y": 75,
+      "width": 339.546875,
+      "height": 191,
+      "top": 75,
+      "right": 488.765625,
+      "bottom": 266,
+      "left": 149.21875
+    },
+    "mission": {
+      "x": 636,
+      "y": 50,
+      "width": 200,
+      "height": 151.59375,
+      "top": 50,
+      "right": 836,
+      "bottom": 201.59375,
+      "left": 636
+    },
+    "workshop": {
+      "x": 636,
+      "y": 207.59375,
+      "width": 200,
+      "height": 176.40625,
+      "top": 207.59375,
+      "right": 836,
+      "bottom": 384,
+      "left": 636
+    },
+    "scroll": 844,
+    "width": 844
+  },
+  "reducedMotion": {
+    "particles": 0,
+    "matches": true,
+    "transition": "0s"
+  },
+  "benchmark": {
+    "before": {
+      "averageMs": 1.286666666654249,
+      "p95Ms": 7.300000000745058,
+      "particles": 180,
+      "labels": 10
+    },
+    "after": {
+      "averageMs": 4.726666666660458,
+      "p95Ms": 9.300000000745058,
+      "particles": 90,
+      "labels": 1
+    },
+    "engineUnchanged": true,
+    "population": 220
+  },
+  "errors": [],
+  "externalRequests": []
+}

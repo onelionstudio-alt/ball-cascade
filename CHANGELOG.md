@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.3.3-feel.1 — Game feel polish review candidate
+
+- Keep the Neon Cabinet design; add twelve level palettes and construction details aligned with existing physical elements.
+- Enlarge only ball artwork, with adaptive glow/fast trails, socketed pegs, deeper pockets and coalesced event pulses/sparks.
+- Add restrained event-specific synthesized audio, a hard eight-voice limit and mute cleanup; respect reduced motion.
+- Remove technical labels from normal play. Show every mandatory result condition, highlight the missing goal and offer a short retry tip.
+- Preserve ten gameplay/input/platform modules and canonical campaign data byte-for-byte from the visual redesign.
+- Include 80 passing checks, both twelve-level browser campaigns, mobile/touch/save checks, real Before/After screenshots, a 220-ball rendering benchmark and normal-speed WebM gameplay.
+- Review branch only; stacked on visual redesign PR #2. No main/Pages update or merge.
+
 ## 0.3.2-visual.1 — Neon Cabinet review candidate
 
 - Redesign the cabinet, mission hierarchy, workshop, circuit navigation and result screens with original Canvas/SVG/CSS artwork.

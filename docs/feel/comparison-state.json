@@ -1,0 +1,42 @@
+{
+  "source": "Unmodified profile earned by the after Chromium UI campaign",
+  "profileSha256": "c53bfc8b8cf96fa9378c197ddbca9cd57ac617e16d8450edb991808556131a04",
+  "records": [
+    {
+      "mode": "before",
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "coins": 4190,
+      "aim": 530,
+      "state": "PRACTICE"
+    },
+    {
+      "mode": "before",
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "coins": 4190,
+      "aim": 530,
+      "state": "PRACTICE"
+    },
+    {
+      "mode": "after",
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "coins": 4190,
+      "aim": 530,
+      "state": "PRACTICE"
+    },
+    {
+      "mode": "after",
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "coins": 4190,
+      "aim": 530,
+      "state": "PRACTICE"
+    }
+  ]
+}

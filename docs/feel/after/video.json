@@ -1,0 +1,15 @@
+{
+  "mime": "video/webm;codecs=vp8,opus",
+  "audioState": "running",
+  "videoTracks": 1,
+  "audioTracks": 1,
+  "width": 960,
+  "height": 540,
+  "fps": 30,
+  "simulationSpeed": 1,
+  "approximateDurationSeconds": 10.5,
+  "bytes": 1653281,
+  "level": "Chaos Factory",
+  "errors": [],
+  "source": "Actual normal-speed Canvas gameplay with a test-only tap of the game Web Audio master"
+}

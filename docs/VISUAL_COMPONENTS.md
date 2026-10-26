@@ -31,6 +31,10 @@ Use `icon(name)` from `src/ui.js` for play, pause, sound, help, redo, next, coin
 
 The renderer owns cosmetic particles, labels, pulses and its animation clock. It does not change ball positions, peg state, scores or simulation randomness. Limits: 180 particles, 14 transient labels, 12 pulses, and at most ten normal visual-event emissions per frame. The physical 220-ball limit is unchanged.
 
+The game feel extension adds `SCENES` and `sceneConstruction(ctx, level)` in `src/scene.js`: twelve semantic accent/material themes, decorative boundary rails and mount grooves derived from the real peg descriptors. Decorations create no collision shapes. Cache only the current level backdrop. Ball sprite draw sizes adapt at 40/100 active balls; physical radii stay untouched. Event accents coalesce by event type and 30px region for 65ms. `AudioSystem` uses a shared quiet gain, per-event cooldowns and at most eight oscillator voices; disabling sound stops pending voices.
+
+`resultView(level, result, actions)` in `src/result-view.js` is a read-only checklist adapter. Reuse `.result-checklist`, `.requirement.complete`, `.requirement.incomplete` and `.result-tip` to explain actual mandatory conditions; never use presentation helpers to decide wins or award money. The missing condition leads the failure dialog, while complete conditions remain inspectable. Diagnostic content belongs inside Help with localhost `?dev=1`, never in the main HUD.
+
 ## Motion and responsive behavior
 
 Stars enter with short offsets; rewards count up in 650ms; dialogs enter in 260ms; buttons press by 2px; unlocks and tuning flash briefly. `prefers-reduced-motion` disables CSS transitions/animations, count-up and optional Canvas effects. Ball movement remains essential gameplay.
