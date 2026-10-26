@@ -7,12 +7,13 @@ export function bindInput(canvas,engine,renderer,{onChange=()=>{},onPause=()=>{}
   canvas.addEventListener('pointerdown',e=>{
     if(e.isPrimary===false||pointer!==null||e.button>0)return;
     const p=point(e),r=canvas.getBoundingClientRect(),hx=Math.max(78,22*W/r.width),hy=Math.max(28,22*H/r.height);
-    const m=engine.modules.filter(m=>Math.abs(m.x-p.x)<hx&&Math.abs(m.y-p.y)<hy).sort((a,b)=>Math.hypot(a.x-p.x,a.y-p.y)-Math.hypot(b.x-p.x,b.y-p.y))[0];
+    const onArrow=p.y<75&&Math.abs(p.x-engine.aim)<Math.max(44,22*W/r.width);
+    // The emitter wins overlapping touch targets on very short landscape boards.
+    const m=onArrow?null:engine.modules.filter(m=>Math.abs(m.x-p.x)<hx&&Math.abs(m.y-p.y)<hy).sort((a,b)=>Math.hypot(a.x-p.x,a.y-p.y)-Math.hypot(b.x-p.x,b.y-p.y))[0];
     if(m){drag={id:m.id,dx:p.x-m.x,dy:p.y-m.y};choose(m.id);capture(e);}
     else if(p.y<125){
       // Grabbing the arrow preserves the finger's offset; tapping elsewhere in
       // the top strip still aims immediately and can continue into a drag.
-      const onArrow=p.y<75&&Math.abs(p.x-engine.aim)<Math.max(44,22*W/r.width);
       drag={id:-1,dx:onArrow?p.x-engine.aim:0};
       if(!onArrow)engine.aimTo(p.x);choose(-1);capture(e);onChange();
     }

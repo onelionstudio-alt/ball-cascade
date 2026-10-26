@@ -4,7 +4,7 @@ import {LEVELS} from './src/levels.js';
 import {TRACKS,price,CAP} from './src/economy.js';
 import {goalText,progressText,metrics} from './src/goals.js';
 import {Renderer} from './src/render.js?v=0.3.1';
-import {bindInput} from './src/input.js?v=0.3.1';
+import {bindInput} from './src/input.js?v=0.3.1-2';
 import {AudioSystem} from './src/audio.js';
 import {PlatformAdapter} from './src/platform.js';
 import {DT,W,H,clamp} from './src/math.js';

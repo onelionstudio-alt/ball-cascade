@@ -5,7 +5,7 @@
 - Drag the arrow left or right with mouse or touch; preserve the grab offset, pointer capture, bounds, saved aim and keyboard controls. Clicking/tapping the top strip still works.
 - Show a horizontal rail, direction chevrons, a visible Drag to aim caption and a permanent instruction above the board. First Light now explicitly asks the player to drag the arrow.
 - Version the changed entry/input/render assets to prevent old browser caches from hiding the update.
-- All 57 Node checks pass, including six new emitter input checks. The browser touch fixture now exercises emitter dragging/cancellation as well as module dragging. A new real-browser run is unavailable in the current tool session; the prior 0.3 campaign results remain historical evidence.
+- All 58 Node checks pass, including seven new emitter input checks and overlapping mobile touch targets. The browser touch fixture now exercises emitter dragging/cancellation as well as module dragging. A new real-browser run is unavailable in the current tool session; the prior 0.3 campaign results remain historical evidence.
 
 ## 0.3.0 — Cascade Challenge, playtest candidate
 

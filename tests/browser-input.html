@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ball Cascade browser input checks</title><style>body{font:16px system-ui;background:#102027;color:#dcff80;margin:12px}button{padding:14px;margin:5px}canvas{display:block;width:min(100%,480px);aspect-ratio:16/9;background:#24343e;touch-action:none}pre{white-space:pre-wrap}</style><h1>Real input module · browser fixture</h1><p>Software-dispatched touch PointerEvents. Not a hardware touchscreen certification.</p><button id="run">Run touch pointer checks</button><canvas width="960" height="540"></canvas><pre id="output">Not run</pre><script type="module">
-import {Engine} from '../src/engine.js';import {fresh} from '../src/save.js';import {bindInput} from '../src/input.js?v=0.3.1';
+import {Engine} from '../src/engine.js';import {fresh} from '../src/save.js';import {bindInput} from '../src/input.js?v=0.3.1-2';
 const c=document.querySelector('canvas'),out=document.querySelector('#output');
 document.querySelector('#run').onclick=()=>{
  const e=new Engine(fresh()),r={selected:-1};bindInput(c,e,r);const box=c.getBoundingClientRect();
