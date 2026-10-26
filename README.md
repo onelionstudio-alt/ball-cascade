@@ -22,7 +22,7 @@ The build exports `artifacts/site/` with index.html at its root. Upload the comp
 
 ## Controls and saves
 
-Drag a module; click/tap the top of the board to aim. Start Challenge begins a finite attempt. Burst spends part of the same budget, with three uses and an eight-second cooldown. Failed attempts are free. Numeric module controls and arrow keys provide keyboard access; Shift moves faster, Space launches, Escape pauses. Help contains tutorial skip, layout restore, local report and a separate reset confirmation.
+Drag a module; drag the ↔ arrow left or right to aim. Clicking/tapping elsewhere at the top still works. Start Challenge begins a finite attempt. Burst spends part of the same budget, with three uses and an eight-second cooldown. Failed attempts are free. Numeric module controls and arrow keys provide keyboard access; Shift moves faster, Space launches, Escape pauses. Help contains tutorial skip, layout restore, local report and a separate reset confirmation.
 
 Saves are local to the browser/device. Progress, best results, upgrades, layouts, sound and tutorial status persist. Unfinished physics restarts after reload. Version 0.2 data is retained and backed up before bounded compensation; details are in the design document. Reports stay local until the player explicitly copies and shares them.
 
