@@ -27,7 +27,7 @@ export function missionView(level,m){
  if(level.chains){current=m.chains;total=level.chains;label=`Trigger ${total} chain reactions`;progress=`${current} / ${total} reactions`;conditions.push({icon:'target',text:`${m.targeted}/${level.need} delivered`,done:m.targeted>=level.need});}
  if(level.boosted)conditions.push({icon:'burst',text:`${m.boosted}/${level.boosted} boosted`,done:m.boosted>=level.boosted});
  if(level.minEfficiency)conditions.push({icon:'accuracy',text:`Accuracy ≥ ${Math.round(level.minEfficiency*100)}%`,done:m.emitted>0&&m.efficiency>=level.minEfficiency});
- if(level.maxLoss!==undefined)conditions.push({icon:'hazard',text:`Loss ≤ ${Math.round(level.maxLoss*100)}%`,done:m.emitted>0&&m.lossRate<=level.maxLoss});
+ if(level.maxLoss!==undefined)conditions.push({icon:'hazard',text:`Original loss ${Math.round(m.lossRate*100)}% ≤ ${Math.round(level.maxLoss*100)}%`,done:m.emitted>0&&m.lossRate<=level.maxLoss});
  return {label,progress,ratio:Math.min(1,total?current/total:0),conditions};
 }
 

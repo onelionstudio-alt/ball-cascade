@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.3-feel.2 — clear destruction counter
+
+- Show every destroyed physical ball, including split copies, in the main Destroyed counter and result card. Previously the ambiguous Lost counter showed only fully lost originals.
+- Label the unchanged original-loss limit separately and explain the difference in Help/results. Practice remains unscored.
+- Real Chrome regression: the same Chaos Factory attempt destroys 130 copies with zero fully lost originals; old HUD showed 0, corrected HUD shows 130. Desktop/mobile screenshots and raw evidence are in docs/fixes/loss-counter.
+- All 80 tests pass; physics, goals, save schema and economy are unchanged.
+
 ## 0.3.3-feel.1 — Game feel polish
 
 - Keep the Neon Cabinet design; add twelve level palettes and construction details aligned with existing physical elements.
