@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.3.3-feel.1 — Game feel polish review candidate
+## 0.3.3-feel.1 — Game feel polish
 
 - Keep the Neon Cabinet design; add twelve level palettes and construction details aligned with existing physical elements.
 - Enlarge only ball artwork, with adaptive glow/fast trails, socketed pegs, deeper pockets and coalesced event pulses/sparks.
@@ -8,7 +8,7 @@
 - Remove technical labels from normal play. Show every mandatory result condition, highlight the missing goal and offer a short retry tip.
 - Preserve ten gameplay/input/platform modules and canonical campaign data byte-for-byte from the visual redesign.
 - Include 80 passing checks, both twelve-level browser campaigns, mobile/touch/save checks, real Before/After screenshots, a 220-ball rendering benchmark and normal-speed WebM gameplay.
-- Review branch only; stacked on visual redesign PR #2. No main/Pages update or merge.
+- Developed in PR #3, stacked on visual redesign PR #2. Owner authorized merging both and publishing to Pages on 2026-10-26. Historical review reports retain the pre-publication evidence and release boundary.
 
 ## 0.3.2-visual.1 — Neon Cabinet review candidate
 

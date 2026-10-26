@@ -1,6 +1,8 @@
-# Ball Cascade — game feel polish review build
+# Ball Cascade — Neon Arcade / game feel polish
 
-`feature/game-feel-polish` builds on the Neon Cabinet redesign in `feature/visual-overhaul` (PR #2, `61d07a3`). It improves the twelve scene identities, ball readability, bounded effects/sound and explanations of unmet goals. Physics, goals, budgets, upgrade prices, economy, input and save schema remain unchanged from that redesign. This branch is for review and must not replace main/Pages without owner confirmation.
+Version `0.3.3-feel.1` builds on the Neon Cabinet redesign (PR #2, `61d07a3`) and game feel polish (PR #3, `ba9042b`). It improves the twelve scene identities, ball readability, bounded effects/sound and explanations of unmet goals. Physics, goals, budgets, upgrade prices, economy, input and save schema remain unchanged from that redesign. The owner authorized merging and public publication on 2026-10-26.
+
+Public game: [Ball Cascade](https://onelionstudio-alt.github.io/ball-cascade/).
 
 See [game feel Before/After, video and verification](docs/GAME_FEEL_POLISH_REPORT.md), the [earlier visual redesign](docs/VISUAL_REDESIGN_REPORT.md) and the [Atelier 452 visual components](docs/VISUAL_COMPONENTS.md).
 
@@ -32,9 +34,9 @@ Saves are local to the browser/device. Progress, best results, upgrades, layouts
 
 `?qaSpeed=8` accelerates fixed-step simulation on localhost only and changes no game rules. Public hosts ignore it. Diagnostics are confined to Help on localhost with `?dev=1`. The new browser campaign checks use ×8; the recorded gameplay uses normal speed. Neither is a novice timing study.
 
-## Review status
+## Publication and acceptance
 
-Development branch: `feature/game-feel-polish`, stacked on the unmerged visual redesign PR #2. Baseline tag `v0.2.0` preserves published **0.2.2**, commit `2a801b3`; the tag annotation states this explicitly. The existing main branch and public Pages version are preserved for comparison. No deployment workflow is added. Merge/publication requires owner confirmation.
+Developed in `feature/game-feel-polish`, stacked on `feature/visual-overhaul`, with screenshots, video and checks retained in both reports. Their review-only statements describe the state before the owner's publication authorization. GitHub Pages publishes the repository root from main. The prior public version remains available in Git at `4a2cac1`. Baseline tag `v0.2.0` preserves published **0.2.2**, commit `2a801b3`; the tag annotation states this explicitly.
 
 This is an external playtest candidate, not a certified Poki or CrazyGames release. There are no ads, purchases or vendor SDK scripts. A fault-tolerant platform adapter is provided for later integration. Actual phones, Firefox, novice onboarding and retention remain manual acceptance items.
 
