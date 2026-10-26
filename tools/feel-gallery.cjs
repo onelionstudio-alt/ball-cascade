@@ -1,0 +1,17 @@
+const fs=require('node:fs/promises'),path=require('node:path'),assert=require('node:assert/strict'),crypto=require('node:crypto');
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');let browser;
+(async()=>{
+ const {LEVELS}=await import('../src/levels.js');
+ browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
+ const page=await browser.newPage({viewport:{width:1440,height:1250}}),cards=[];
+ for(let id=0;id<12;id++){const bytes=await fs.readFile(`docs/feel/after/themes/${String(id+1).padStart(2,'0')}.png`);cards.push(`<figure><figcaption>${String(id+1).padStart(2,'0')} · ${LEVELS[id].name}</figcaption><img src="data:image/png;base64,${bytes.toString('base64')}"></figure>`);}
+ await page.setContent(`<style>body{margin:0;background:#071222;color:#ddebfa;font:16px system-ui;padding:16px}main{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}figure{margin:0;background:#142438;border:1px solid #375269;border-radius:10px;overflow:hidden}figcaption{padding:9px 12px}img{display:block;width:100%}</style><main>${cards.join('')}</main>`);
+ await page.locator('img').last().waitFor();await page.evaluate(()=>Promise.all([...document.images].map(i=>i.decode())));await page.screenshot({path:'docs/feel/after/themes-contact-sheet.png',fullPage:true});
+ const bytes=await fs.readFile('docs/feel/after/gameplay.webm');await page.setContent(`<video controls src="data:video/webm;base64,${bytes.toString('base64')}"></video>`);
+ await page.locator('video').evaluate(v=>new Promise(resolve=>v.readyState>=1?resolve():v.addEventListener('loadedmetadata',resolve,{once:true})));
+ await page.locator('video').evaluate(v=>v.controls=false);const frames=[];for(const time of [2,7]){await page.locator('video').evaluate((v,t)=>new Promise(resolve=>{v.addEventListener('seeked',resolve,{once:true});v.currentTime=t;}),time);const frame=await page.locator('video').screenshot({path:`docs/feel/after/video-frame-${time}.png`});frames.push({seconds:time,sha256:crypto.createHash('sha256').update(frame).digest('hex')});}
+ assert.notEqual(frames[0].sha256,frames[1].sha256);
+ // Decode the actual recorded audio, rather than only trusting track metadata.
+ const audio=await page.locator('video').evaluate(async v=>{await new Promise(resolve=>{v.addEventListener('seeked',resolve,{once:true});v.currentTime=2;});const c=new AudioContext(),source=c.createMediaElementSource(v),analyser=c.createAnalyser();source.connect(analyser).connect(c.destination);await c.resume();await v.play();let peak=0;const samples=new Float32Array(analyser.fftSize);for(let i=0;i<75;i++){await new Promise(r=>setTimeout(r,40));analyser.getFloatTimeDomainData(samples);for(const s of samples)peak=Math.max(peak,Math.abs(s));}v.pause();await c.close();return{peak,width:v.videoWidth,height:v.videoHeight,decodedTime:v.currentTime,contextState:c.state,muted:v.muted,volume:v.volume};});console.log('Audio decode',audio);assert(audio.peak>0);assert.equal(audio.width,960);assert.equal(audio.height,540);
+ await fs.writeFile('docs/feel/after/video-verification.json',JSON.stringify({frames,audio,bytes:bytes.length,verified:'Real WebM decoded in Chrome; distinct gameplay frames and non-silent recorded game audio'},null,2));await browser.close();console.log('Twelve-theme contact sheet and video playback verified',audio);
+})().catch(async e=>{console.error(e);await browser?.close();process.exitCode=1;});

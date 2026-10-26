@@ -1,0 +1,14 @@
+{
+  "version": {
+    "name": "Ball Cascade: Cascade Challenge",
+    "version": "0.3.3-feel.1",
+    "entry": "index.html",
+    "sdk": "none; future adapter only"
+  },
+  "subdirectoryRuntime": true,
+  "levels": 12,
+  "muteToggle": true,
+  "diagnosticsHidden": true,
+  "requests": 18,
+  "errors": []
+}

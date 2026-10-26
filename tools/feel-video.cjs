@@ -1,0 +1,18 @@
+const fs=require('node:fs/promises'),path=require('node:path'),assert=require('node:assert/strict');
+const{chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');let browser;
+(async()=>{
+ const profile=JSON.parse(await fs.readFile('docs/visual/after/results.json','utf8')).report.profile;
+ browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});const context=await browser.newContext({viewport:{width:1440,height:900}});
+ await context.addInitScript(saved=>{
+  localStorage.setItem('ball-cascade-v3',saved);
+  // Test-only audio tap: duplicate the app's master output into a recorder.
+  // No microphone, system audio, game state or production code is accessed.
+  const Native=window.AudioContext;
+  window.AudioContext=class extends Native{constructor(...args){super(...args);this.qaTap=this.createMediaStreamDestination();window.qaAudio=this;}createGain(){const node=super.createGain(),connect=node.connect.bind(node),ctx=this;node.connect=function(destination,...rest){if(destination===ctx.destination)connect(ctx.qaTap);return connect(destination,...rest);};return node;}};
+ },JSON.stringify(profile));
+ const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('http://127.0.0.1:8020/');await page.locator('[data-level="10"]').click();await page.locator('#sound').click();
+ const meta=await page.evaluate(()=>{const stream=document.querySelector('canvas').captureStream(0),audio=window.qaAudio;for(const track of audio.qaTap.stream.getAudioTracks())stream.addTrack(track);const mime='video/webm;codecs=vp8,opus';const rec=new MediaRecorder(stream,{mimeType:mime,videoBitsPerSecond:1400000});const chunks=[];window.qaRecording={rec,chunks};rec.ondataavailable=e=>{if(e.data.size)chunks.push(e.data);};rec.onerror=e=>{window.qaRecordError=String(e.error);};rec.start(200);window.qaFrameTimer=setInterval(()=>stream.getVideoTracks()[0].requestFrame(),33);return{mime,audioState:audio.state,videoTracks:stream.getVideoTracks().length,audioTracks:stream.getAudioTracks().length,width:960,height:540,fps:30,simulationSpeed:1};});
+ await page.locator('#launch').click();await page.locator('#launch').click();await page.waitForTimeout(8500);if(await page.locator('#launch').isEnabled())await page.locator('#launch').click();await page.waitForTimeout(2000);
+ const data=await page.evaluate(()=>new Promise(resolve=>{const{rec,chunks}=window.qaRecording;rec.onstop=()=>{const reader=new FileReader();reader.onload=()=>resolve(reader.result.slice(reader.result.lastIndexOf(',')+1));reader.readAsDataURL(new Blob(chunks,{type:rec.mimeType}));};clearInterval(window.qaFrameTimer);rec.stop();}));
+ await fs.mkdir('docs/feel/after',{recursive:true});const bytes=Buffer.from(data,'base64');assert(bytes.length>10000,JSON.stringify({bytes:bytes.length,...meta,error:await page.evaluate(()=>window.qaRecordError)}));assert.equal(bytes.subarray(0,4).toString('hex'),'1a45dfa3');assert.equal(errors.length,0,errors.join('\n'));assert.equal(meta.audioTracks,1);await fs.writeFile('docs/feel/after/gameplay.webm',bytes);await fs.writeFile('docs/feel/after/video.json',JSON.stringify({...meta,approximateDurationSeconds:10.5,bytes:bytes.length,level:'Chaos Factory',errors,source:'Actual normal-speed Canvas gameplay with a test-only tap of the game Web Audio master'},null,2));await browser.close();console.log('Recorded actual gameplay and synthesized game audio',bytes.length,'bytes');
+})().catch(async e=>{console.error(e);await browser?.close();process.exitCode=1;});

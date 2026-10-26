@@ -1,0 +1,23 @@
+{
+  "frames": [
+    {
+      "seconds": 2,
+      "sha256": "bd2cf81467bec7f0c3dd583c8cc3e3ff7e48600ad754545113918cb5ce180d83"
+    },
+    {
+      "seconds": 7,
+      "sha256": "5181967eb47094f9deebc847abdfa96a06e4bc600b37d7a1cc595772a469a083"
+    }
+  ],
+  "audio": {
+    "peak": 0.012622561305761337,
+    "width": 960,
+    "height": 540,
+    "decodedTime": 5.490667,
+    "contextState": "closed",
+    "muted": false,
+    "volume": 1
+  },
+  "bytes": 1653281,
+  "verified": "Real WebM decoded in Chrome; distinct gameplay frames and non-silent recorded game audio"
+}
