@@ -1,0 +1,67 @@
+{
+  "trustedTouchDrag": true,
+  "pause": true,
+  "reload": true,
+  "purchase": {
+    "coinsBefore": 160,
+    "coinsAfter": 85,
+    "cost": 75
+  },
+  "shortLandscape": {
+    "canvas": {
+      "x": 149.21875,
+      "y": 75,
+      "width": 339.546875,
+      "height": 191,
+      "top": 75,
+      "right": 488.765625,
+      "bottom": 266,
+      "left": 149.21875
+    },
+    "mission": {
+      "x": 636,
+      "y": 50,
+      "width": 200,
+      "height": 142,
+      "top": 50,
+      "right": 836,
+      "bottom": 192,
+      "left": 636
+    },
+    "workshop": {
+      "x": 636,
+      "y": 198,
+      "width": 200,
+      "height": 186,
+      "top": 198,
+      "right": 836,
+      "bottom": 384,
+      "left": 636
+    },
+    "scroll": 844,
+    "width": 844
+  },
+  "reducedMotion": {
+    "particles": 0,
+    "matches": true,
+    "transition": "0s"
+  },
+  "benchmark": {
+    "before": {
+      "averageMs": 0.624999999992239,
+      "p95Ms": 1,
+      "particles": 180,
+      "labels": 20
+    },
+    "after": {
+      "averageMs": 0.9166666666666666,
+      "p95Ms": 6.099999999627471,
+      "particles": 180,
+      "labels": 10
+    },
+    "engineUnchanged": true,
+    "population": 220
+  },
+  "errors": [],
+  "externalRequests": []
+}

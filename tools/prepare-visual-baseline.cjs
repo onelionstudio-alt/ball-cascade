@@ -1,0 +1,3 @@
+const fs=require('node:fs/promises'),path=require('node:path'),{execFileSync}=require('node:child_process');
+const ref=process.argv[2]||'4a2cac1a58dc9bc6895aa13895ababa4607d1a67';
+(async()=>{const files=execFileSync('git',['ls-tree','-r','--name-only',ref],{encoding:'utf8'}).split('\n').filter(f=>['index.html','game.js','styles.css'].includes(f)||/^src\/[a-z-]+\.js$/.test(f));for(const file of files){const target=path.resolve('.qa/before-site',file);await fs.mkdir(path.dirname(target),{recursive:true});await fs.writeFile(target,execFileSync('git',['show',`${ref}:${file}`],{maxBuffer:2000000}));}console.log('Prepared unchanged visual baseline',ref,files.length,'files');})().catch(e=>{console.error(e);process.exitCode=1;});
