@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.2-visual.1 — Neon Cabinet review candidate
+
+- Redesign the cabinet, mission hierarchy, workshop, circuit navigation and result screens with original Canvas/SVG/CSS artwork.
+- Preserve physics, twelve missions, goals, economy, prices, budgets, fixed-step timing and save schema. Canonical campaign output is unchanged.
+- Include real Before/After Chrome screenshots, both twelve-level UI campaigns, 60 responsive checks, trusted-touch/save checks and a bounded 220-ball rendering benchmark.
+- Fix smooth pointer-gesture intent recognition in a separate commit after trusted-touch testing found the old tutorial issue.
+- Review only; no main/Pages deployment. See docs/VISUAL_REDESIGN_REPORT.md.
+
 ## 0.3.1 — discoverable emitter controls
 
 - Drag the arrow left or right with mouse or touch; preserve the grab offset, pointer capture, bounds, saved aim and keyboard controls. Clicking/tapping the top strip still works.

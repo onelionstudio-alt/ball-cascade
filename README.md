@@ -1,4 +1,8 @@
-# Ball Cascade 0.3 — Cascade Challenge
+# Ball Cascade — visual overhaul review build
+
+`feature/visual-overhaul` contains the Neon Cabinet redesign, based on published 0.3.1 (`4a2cac1`). The twelve missions, physics, goals, budgets, upgrade prices, economy and save schema are preserved. This branch is for review and must not replace main/Pages without owner confirmation.
+
+See [Before/After and real-browser verification](docs/VISUAL_REDESIGN_REPORT.md) and the [Atelier 452 visual components](docs/VISUAL_COMPONENTS.md).
 
 A static Canvas physics puzzle: observe the preview, move the emitter and modules, then solve twelve finite challenges. Includes moving walls, traps, split routes, wind, crushers, portals, gravity shifts and bounded chain reactions. First clears unlock levels; coins buy permanent tuning. Complete the campaign to unlock Challenge Replay and improve three-star results.
 
@@ -22,7 +26,7 @@ The build exports `artifacts/site/` with index.html at its root. Upload the comp
 
 ## Controls and saves
 
-Drag a module; drag the ↔ arrow left or right to aim. Clicking/tapping elsewhere at the top still works. Start Challenge begins a finite attempt. Burst spends part of the same budget, with three uses and an eight-second cooldown. Failed attempts are free. Numeric module controls and arrow keys provide keyboard access; Shift moves faster, Space launches, Escape pauses. Help contains tutorial skip, layout restore, local report and a separate reset confirmation.
+Drag a module; drag the ↔ arrow left or right to aim. Clicking/tapping elsewhere at the top still works. Launch Cascade begins a finite attempt. Burst spends part of the same budget, with three uses and an eight-second cooldown. Failed attempts are free. Numeric module controls and arrow keys provide keyboard access; Shift moves faster, Space launches, Escape pauses. Help contains tutorial skip, layout restore, local report and a separate reset confirmation.
 
 Saves are local to the browser/device. Progress, best results, upgrades, layouts, sound and tutorial status persist. Unfinished physics restarts after reload. Version 0.2 data is retained and backed up before bounded compensation; details are in the design document. Reports stay local until the player explicitly copies and shares them.
 
@@ -30,7 +34,7 @@ Saves are local to the browser/device. Progress, best results, upgrades, layouts
 
 ## Review status
 
-Development branch: `feature/cascade-challenge-v0.3`. Baseline tag `v0.2.0` preserves published **0.2.2**, commit `2a801b3`; the tag annotation states this explicitly. The existing main branch and public Pages version are preserved for comparison. No deployment workflow is added. Merge/publication requires owner confirmation.
+Development branch: `feature/visual-overhaul`. Baseline tag `v0.2.0` preserves published **0.2.2**, commit `2a801b3`; the tag annotation states this explicitly. The existing main branch and public Pages version are preserved for comparison. No deployment workflow is added. Merge/publication requires owner confirmation.
 
 This is an external playtest candidate, not a certified Poki or CrazyGames release. There are no ads, purchases or vendor SDK scripts. A fault-tolerant platform adapter is provided for later integration. Actual phones, Firefox, novice onboarding and retention remain manual acceptance items.
 
