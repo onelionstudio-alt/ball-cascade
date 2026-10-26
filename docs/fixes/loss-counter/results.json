@@ -1,0 +1,31 @@
+{
+  "baseline": "0b0d192911541b58f604c4f020af254447e6f5d1",
+  "source": "Actual Chrome UI attempt; identical unmodified previously earned save; no state injections during play",
+  "rows": [
+    {
+      "mode": "before",
+      "label": "LOST",
+      "displayed": 0,
+      "destroyed": 130,
+      "fullyLostOriginals": 0,
+      "emitted": 130,
+      "lossRate": 0,
+      "causes": {
+        "red trap": 130
+      }
+    },
+    {
+      "mode": "after",
+      "label": "DESTROYED",
+      "displayed": 130,
+      "destroyed": 130,
+      "fullyLostOriginals": 0,
+      "emitted": 130,
+      "lossRate": 0,
+      "causes": {
+        "red trap": 130
+      }
+    }
+  ],
+  "errors": []
+}

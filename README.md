@@ -1,6 +1,6 @@
 # Ball Cascade — Neon Arcade / game feel polish
 
-Version `0.3.3-feel.1` builds on the Neon Cabinet redesign (PR #2, `61d07a3`) and game feel polish (PR #3, `ba9042b`). It improves the twelve scene identities, ball readability, bounded effects/sound and explanations of unmet goals. Physics, goals, budgets, upgrade prices, economy, input and save schema remain unchanged from that redesign. The owner authorized merging and public publication on 2026-10-26.
+Version `0.3.3-feel.2` builds on the Neon Cabinet redesign (PR #2, `61d07a3`) and game feel polish (PR #3, `ba9042b`). It improves the twelve scene identities, ball readability, bounded effects/sound and explanations of unmet goals. Physics, goals, budgets, upgrade prices, economy, input and save schema remain unchanged from that redesign. The owner authorized merging and public publication on 2026-10-26.
 
 Public game: [Ball Cascade](https://onelionstudio-alt.github.io/ball-cascade/).
 
