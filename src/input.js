@@ -10,11 +10,11 @@ export function bindInput(canvas,engine,renderer,{onChange=()=>{},onPause=()=>{}
     const onArrow=p.y<75&&Math.abs(p.x-engine.aim)<Math.max(44,22*W/r.width);
     // The emitter wins overlapping touch targets on very short landscape boards.
     const m=onArrow?null:engine.modules.filter(m=>Math.abs(m.x-p.x)<hx&&Math.abs(m.y-p.y)<hy).sort((a,b)=>Math.hypot(a.x-p.x,a.y-p.y)-Math.hypot(b.x-p.x,b.y-p.y))[0];
-    if(m){drag={id:m.id,dx:p.x-m.x,dy:p.y-m.y};choose(m.id);capture(e);}
+    if(m){drag={id:m.id,dx:p.x-m.x,dy:p.y-m.y,startX:m.x,startY:m.y};choose(m.id);capture(e);}
     else if(p.y<125){
       // Grabbing the arrow preserves the finger's offset; tapping elsewhere in
       // the top strip still aims immediately and can continue into a drag.
-      drag={id:-1,dx:onArrow?p.x-engine.aim:0};
+      drag={id:-1,dx:onArrow?p.x-engine.aim:0,startX:engine.aim};
       if(!onArrow)engine.aimTo(p.x);choose(-1);capture(e);onChange();
     }
   });
@@ -22,7 +22,10 @@ export function bindInput(canvas,engine,renderer,{onChange=()=>{},onPause=()=>{}
     const p=point(e);
     if(!drag){if(canvas.style)canvas.style.cursor=p.y<125?'ew-resize':'grab';return;}
     if(e.pointerId!==pointer)return;
-    if(drag.id<0)engine.aimTo(p.x-drag.dx);else engine.moveModule(drag.id,p.x-drag.dx,p.y-drag.dy);
+    // Recognize the same existing intent thresholds across the whole gesture,
+    // not just a single pointer event. Smooth touch/mouse moves are small steps.
+    if(drag.id<0){if(engine.aimTo(p.x-drag.dx)&&Math.abs(engine.aim-drag.startX)>18)engine.actions.aimed=true;}
+    else if(engine.moveModule(drag.id,p.x-drag.dx,p.y-drag.dy)){const m=engine.modules[drag.id];if(Math.hypot(m.x-drag.startX,m.y-drag.startY)>12)engine.actions.moved=true;}
     onChange();
   });
   function end(e){if(e&&pointer!==null&&e.pointerId!==pointer)return;drag=null;pointer=null;if(canvas.style)canvas.style.cursor='';}
